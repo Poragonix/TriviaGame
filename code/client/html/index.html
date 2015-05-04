@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="../js/hx.min.js" type="text/javascript"></script>
+		<script src="../js/es6-promise.js" type="text/javascript"></script>
+		<script src="../js/intro.js" type="text/javascript"></script>
+		<script src="../js/game.js" type="text/javascript"></script>
+		<script src="../js/mod_screen.js" type="text/javascript"></script>
+		<script src="../js/server_interface.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../styles/style.css"> 
+	</head>
+	<body>
+		<div id="masterContainer">
+
+			<div id="navbar" class="text">
+				<div class="introButton" id="introPageButton">Intro</div>
+				<div class="introButton" id="playGameButton">Play</div>
+				<div class="introButton" id="modMenuButton">Menu</div>
+			</div>
+
+			<div id="content">
+
+				<div class="page" id="introPage">
+					<div class="introTextContainer text">
+					</div>
+
+					<div class="contentContainer text">
+					</div>
+				</div>
+
+				<div class="page" id="gamePage">
+
+					<div class="introTextContainer text">
+					</div>
+
+					<div class="contentContainer">
+
+						<div class="triviaGame text" id="categoryList">
+						</div>		
+
+						<div class="triviaGame text" id="question">
+						</div>
+
+						<div class="triviaGame text" id="answerList">
+						</div>						
+					</div>
+
+				</div>
+
+				<div class="page" id="modPage">
+					<div class="introTextContainer text" >
+					</div>				
+
+					<div class="contentContainer text">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

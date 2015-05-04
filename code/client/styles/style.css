@@ -1,0 +1,251 @@
+body {
+	background-color: tan;
+}
+
+/* ---------- Utility ----------*/
+.noTouch {
+	pointer-events: none;
+}
+
+.touch {
+	pointer-events: auto;
+}
+
+.text {
+	font-family: arial;
+	font-size: 26px;
+	text-align: center;
+	line-height: 1.4;
+	color: gray;
+}
+
+.correctAnswer {
+	color: green;
+}
+
+.wrongAnswer {
+	color: red;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+}
+
+::-moz-input-placeholder {
+   color: black;
+}
+
+
+
+/* ---------- Overall Structure ---------- */
+
+#masterContainer {
+	position: absolute;
+	left: 20%;
+	top: 10%;
+	width: 60%;
+	height: 80%;
+	border: 3px solid red;
+	background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #00A3EF 100%);
+}
+
+#navbar {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 15%;
+	opacity: 0;
+}
+
+#content {
+	position: absolute;
+	display: block;
+	top: 15%;
+	left: 0%;
+	width: 100%;
+	height: 85%;
+	opacity: 0;		
+}
+
+.page {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+
+.introTextContainer {
+	position: absolute;
+	top: 0;
+	left: 10%;
+	height: 10%;
+	width: 80%;
+	color: gray;
+	border: 3px solid black;
+	text-align: center;
+	font-size: 40px;
+}
+
+.contentContainer {
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	height: 80%;
+	width: 80%;
+	border: 3px solid black;
+}
+
+
+
+/* ---------- Navigation Bar ---------- */
+
+#navbar .introButton {
+	position: absolute;
+	height: 40px;
+	width: 16%;
+	background-color: black;
+	color: white;
+	font-family: arial;
+	font-size: 26px;
+	text-align: center;
+	line-height: 1.4;
+	border: 3px solid red;
+}
+
+.inactiveButton {
+	opacity: .5;
+	pointer-events: none;
+}
+
+.activeButton {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+#introPageButton {
+	left: 0;
+}
+
+#playGameButton {
+	left: 42%;
+}
+
+#modMenuButton {
+	right: 0;
+}
+
+
+
+/* ---------- Intro Page ---------- */
+
+#introPage .contentContainer {
+	color: gray;
+	font-size: 20px;
+}
+
+
+
+
+/* ---------- Mod Page ---------- */
+
+#modPage .contentContainer {
+	overflow-y: auto;
+}
+
+.modCategory {
+	text-align: left;
+	font-size: 24px;
+	margin-bottom: 6px;
+}
+
+.modQuestion {
+	margin-left: 20px;
+	font-size: 21px;
+	margin-bottom: 4px;
+}
+
+.modAnswer {
+	margin-left: 20px;
+	font-size: 18px;
+}
+
+#modPage .addButton {
+	position: inherit;
+	left: 0%;
+	background-color: transparent;
+	border: none;
+	color: black;
+	font-size: 24px;
+}
+
+#modPage .modCategory > .addButton {
+	font-size: 21px;
+	margin-left: 20px;	
+}
+
+#modPage .modQuestion > .addButton {
+	font-size: 18px;
+	margin-left: 40px;
+}
+
+.answerIcon {
+	position: absolute;
+	left: 37px;
+}
+
+
+
+/* ---------- Game Page ---------- */
+
+#categoryList {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#question {
+	position: absolute;
+	height: 30%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	font-size: 21px;
+}
+
+#answerList {
+	position: absolute;
+	height: 60%;
+	width: 100%;
+	top: 35%;
+	left: 0;	
+}
+
+#gamePage .categoryName {
+	color: gray;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 24px;
+}
+
+#gamePage .contentContainer {
+	overflow-y: auto;
+}
+
+.scoreBoard {
+	position: absolute;
+	right: 15px;
+}  
+
+.score {
+	right: 0;
+}
+/*#gamePage .triviaGame {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}*/
