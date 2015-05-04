@@ -14,6 +14,12 @@ Configure the database IP/port/collection at code/server/routes/index.js (defaul
 Configure the server IP at code/client/js/server_interface (default to localhost for now)<br />
 
 
+Seed the database by uncommenting line 13 in /code/client/js/mod_screen and running the HTML once.<br />
+Then, recomment the line and reload.
+``` javascript
+// testInsert( db );
+```
+
 OPTIMIZATIONS:<br />
 -Remove Categories<br />
 -Remove Questions<br />
