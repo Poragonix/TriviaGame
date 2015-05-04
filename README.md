@@ -7,9 +7,11 @@ Install express<br />
 Install mongodb<br />
 -mkdir C:/data and C:/data/db<br />
 -run mongodb from the bin directory<br />
+run "npm start" inside the code/server directory<br />
 
 
-should be able to connect at this point<br />
+Configure the database IP/port/collection at code/server/routes/index.js (default to localhost for now)<br />
+Configure the server IP at code/client/js/server_interface (default to localhost for now)<br />
 
 
 OPTIMIZATIONS:<br />
